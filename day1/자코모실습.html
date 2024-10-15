@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAKOMO</title>
+    <style>
+        .container {
+            display:flex;
+            padding: 15px;
+        }
+      .card_box {
+        position: relative;
+        margin: 16px;
+        width: 500px;
+        height: 600px;
+        overflow: hidden;
+        border-radius: 8px;
+        /* transform: translateY(-100px); */
+        z-index: 2;
+        background-color: black;
+      }
+
+      .text_area {
+        position: absolute;
+        bottom: 0;
+        padding: 25px;
+
+      }
+
+      .text_area > h1 {
+        color: #fff;
+        font-size: 50px;
+        text-align: center;
+        margin-right:30px
+        /* flex-direction: column; */
+      }
+
+      .text_area > p {
+        color: #fff;
+        text-align: center;
+        line-height: 1.5;
+      }
+
+      .fabric_box {
+        position: absolute;
+        bottom: 0;
+        padding: 25px;
+        z-index: 2;
+      }
+
+      .container > div:hover{
+        flex-shrink: 0;
+        transition:0.3s;
+      }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="card_box">
+        <img src="./자코모 실습이미지1번.jpg" alt="leather_img">
+        <div class="text_area">
+            <h1>Leather</h1>
+            <p>프리미엄 가죽</p>
+            <a href="#" class="btn"></a>
+        </div>
+    </div>
+
+    <div class="card_box">
+        <img src="./자코모 실습이미지2번.jpg" alt="Fabric_img">
+        <!-- 인라인태그 img , a -->
+        <div class="text_area">
+            <h1>Fabric</h1>
+            <!-- 블록태그 h1 , p -->
+            <p>기능성 패브릭</p>
+            <a href="#" class="btn"></a>
+        </div>
+    </div>
+
+    <div class="card_box">
+        <img src="./자코모 실습이미지3번.jpg" alt="Material_img">
+        <div class="text_area">
+            <h1>Material</h1>
+            <p>올바른 내장재</p>
+            <a href="#" class="btn"></a>
+        </div>
+    </div>
+</div>
+</body>
+</html>
