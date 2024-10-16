@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAKOMO답안</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        section {
+            display: flex;
+            width: 100%;
+        }
+
+        figure {
+            position: relative;
+            /* width: auto; */
+            height: 800px;
+            overflow: hidden;
+        }
+
+        figure > img {
+            transition: 0.7s;
+        }
+
+        figure > img:hover {
+            transform: scale(1.1);
+        }
+
+        .textbox {
+            position: absolute;
+            bottom: 100px;
+            left: 50%;
+            transform: translate(-50%);
+            color: #fff;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 48px;
+            margin: 16px 0;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <figure>
+            <img src="./자코모 실습이미지1번.jpg" alt="leather">
+            <div class="textbox">
+                <h2>leather</h2>
+                <p>프리미엄 가죽</p>
+            </div>
+        </figure>
+
+        <figure>
+            <img src="./자코모 실습이미지2번.jpg" alt="Fabric">
+            <div class="textbox">
+                <h2>fabric</h2>
+                <p>기능성 패브릭</p>
+            </div>
+        </figure>
+
+        <figure>
+            <img src="./자코모 실습이미지3번.jpg" alt="Material">
+            <div class="textbox">
+                <h2>material</h2>
+                <p>내장재</p>
+            </div>
+        </figure>
+    </section>
+</body>
+</html>
