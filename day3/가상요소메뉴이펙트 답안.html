@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>답안풀이</title>
+    <style>
+        body {
+            background-color: pink;
+        }
+
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+
+        }
+
+        li {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: #fff;
+            width: 200px;
+            display: inline-block;
+            margin: 16px;
+            font-size: 20px;
+            height: 150px;
+            text-align: center;
+        }
+
+        span {
+            display: block;
+        }
+
+        a > span:first-child {
+            color: #fff;
+            font-size: 25px;
+            font-weight: 900;
+        }
+
+        a> span:last-child {
+            color: darkred;
+            opacity: 0;
+            transition: 0.3s;
+        }
+
+        a:hover span:last-child {
+            opacity: 1;
+            transform: translateY(15px);
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>
+                <a href="#">
+                    <span>hmtl</span>
+                    <span>markup</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span>css</span>
+                    <span>style</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span>javascript</span>
+                    <span>coding</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span>UXUL design</span>
+                    <span>design</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span>portfolio</span>
+                    <span>project</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</body>
+</html>
