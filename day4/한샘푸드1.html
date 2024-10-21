@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>한샘푸드 실습1</title>
+    <script src="https://kit.fontawesome.com/161085b17f.js" crossorigin="anonymous"></script>
+    <style>
+
+    @font-face {
+    font-family: 'NanumSquareNeoLight';
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-aLt.eot);
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-aLt.eot?#iefix) format("embedded-opentype"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-aLt.woff) format("woff"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-aLt.ttf) format("truetype");
+    }
+        li {
+            list-style: none;
+            position: relative;
+            width: 400px;
+            height: 400px;
+            background-color: rgb(213, 228, 171);
+            border-radius: 25px;
+        }
+
+        ul {
+            padding: 0;
+        }
+        
+        h2 {
+            font-size: 20px;
+            color: rgb(8, 43, 25);
+            /* padding: 15px; */
+            display: flex;
+            margin: 0;
+            
+        }
+        
+        p {
+            font-size: 25px;
+            font-weight: bold;
+            /* text-align: center; */
+            color: rgb(8, 43, 25);
+            /* padding: 15px; */
+            margin: 0;
+
+        }
+
+        figure {
+            border-radius: 25px;
+            background: url(./한샘푸드\ 이미지.png);
+            background-size: cover;
+            width: 400px;
+            height: 150px;
+            margin: 0;
+            position: absolute;
+            bottom: 0;
+        }
+
+        .flexbox {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 24px;
+        }
+
+        a {
+            background-color: aliceblue;
+            border-radius: 24px;
+            display: block;
+            width: 45px;
+            height: 45px;
+        }
+        
+    </style>
+</head>
+<body>
+    <section>
+        <ul>
+            <li>
+                <div class="text_area">
+                    <div class="flexbox">
+                        <h2>위탁급식시스템</h2>
+                        <p>
+                            <a href="">
+                                <i class="fa-solid fa-arrow-up-right-from-square fa-x1"></i>
+                            </a>
+                        </p>
+                    </div>
+                    <p>급식업무 일체를 위임받아
+                        체계적으로 운영하는 전문
+                        급식 서비스
+                    </p>
+                </div>
+                <figure>
+                    <!-- <img src="./한샘푸드 이미지.png" alt="급식"> -->
+                </figure>
+            </li>
+        </ul>
+    </section>
+
+</body>
+</html>
