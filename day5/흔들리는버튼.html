@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>버튼에 호버</title>
+    <style>
+        .ani_btn {
+            padding:10px 16px;
+            background-color: rgb(132, 214, 214);
+            color: #fff;
+            border: none;
+            border-radius: 25px;
+            font-size: 24px;
+            margin: 50px;
+        }
+
+        .ani_btn:hover {
+            animation-name:BAnimation;
+            animation-duration:2s;
+            animation-iteration-count:3;
+            
+        }
+        @keyframes BAnimation {
+            0% {
+                transform : rotate(-10deg);
+            }
+
+            50% {
+                transform : rotate(10deg);
+            }
+
+            100% {
+                transform: rotate(-10deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <button class="ani_btn">호버 시 버튼이 흔들립니다</button>
+    </div>
+</body>
+</html>
