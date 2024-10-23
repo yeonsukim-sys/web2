@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회전텍스트</title>
+    <style>
+        section {
+            overflow: hidden;
+        }
+        .animation_text {
+            width: max-content;
+            /* hmtl요소의 너비를 최대한 늘리고 싶을 떄 사용 */
+            /* 최대 너비는 안에 담고있는 컨텐츠의 길이에 따라 좌우된다 */
+            /* 텍스트의 컨텐츠의 경우 줄바꿈을 하지 않으면 문장의 길이가
+            길어진다 */
+            /* 자식요소가 부모요소를 삐져나가서 콘텐츠만큼의 영역을 차지하게
+            된다 */  
+        }
+
+        .animation_text > p {
+            font-size: 100px;
+        }
+
+        .animation_text {
+            animation-name: textmove;
+            animation-duration: 15s;
+            animation-timing-function: linear;
+        }
+
+
+
+        @keyframes textmove {
+            0% {
+                transform: translateX(0%);
+            }
+
+            100%{
+                transform: translate(-50%);
+            }
+        }
+        
+        .ani2 {
+            animation-direction: reverse;
+        }
+
+    </style>
+</head>
+<body>
+    <section>
+        <div class="animation_text">
+          <p>
+            There is a story that when I die, my pet will come meet me.
+          </p>
+        </div>
+        <div class="animation_text ani2">
+            <p>and I like the story cause I already know the time too fast</p>
+        </div>
+    </section>
+</body>
+</html>

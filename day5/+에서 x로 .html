@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>+에서 x로</title>
+    <script src="https://kit.fontawesome.com/161085b17f.js" crossorigin="anonymous"></script>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding:24px;
+            background-color: darkorange;
+            color: #fff;
+        }
+
+        ul {
+            display: flex;
+        }
+
+        li {
+            list-style: none;
+            margin: 0 16px;
+        }
+
+        .plusbtn:hover > i {
+            animation-name:trans_close;
+            animation-duration: 0.7s;
+            animation-fill-mode: forwards;
+        }
+
+
+        
+        @keyframes trans_close {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(-225deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="logo">LOGO</h1>
+        <ul>
+            <li>메뉴</li>
+            <li>메뉴</li>
+            <li>메뉴</li>
+            <li>메뉴</li>
+        </ul>
+        <div class="plusbtn">
+            <i class="fa-solid fa-plus fa-x2"></i>
+        </div>
+    </header>
+</body>
+</html>
