@@ -22,6 +22,29 @@
         li {
             list-style: none;
             margin: 0 16px;
+            color: #fff;
+        }
+
+
+        .icon:hover {
+            animation-name: plusAniamation
+            animation-duration:2s
+            animation-iteration-count:3;
+            
+        }
+
+        @keyframes plusAniamation {
+            0% {
+                transform: rotate(-10deg);
+            }
+
+            50% {
+                transform: rotate(50deg);
+            }
+
+            100% {
+                transform: rotate(-50deg);
+            }
         }
     </style>
 </head>
@@ -36,7 +59,7 @@
                 <li>근로수당</li>
             </ul>
         </nav>
-        <div><i class="fa-solid fa-plus fa-x2"></i></div>
+        <div class="icon"><i class="fa-solid fa-plus fa-x2"></i></div>
     </header>
 </body>
 
