@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>에그드랍 실습페이지</title>
+    <style>
+        section {
+            width: 100%;
+            display: flex;
+            position: relative;
+        }
+
+        h1 {
+            font-size: 60px;
+            margin: 30px;
+            padding: 40px;
+            z-index: 2;
+            position: absolute
+        }
+
+        figure {
+            animation-name:slideAnimation;
+            animation-duration: 5s;
+            animation-direction: normal;
+            animation-iteration-count: infinite;
+        }
+
+
+        .text_box {
+            position: absolute;
+            right: 10%;
+            bottom: 0%;
+        }
+
+        @keyframes slideAnimation {
+            from {
+                transform: translateX(-100%);
+            }
+
+            to {
+                transform: translateX(-5px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h1>EGG makes Better</h1>
+        <figure>
+            <img src="./img_better.jpg" alt="eggdrop">
+        </figure>
+        <div class="text_box">
+            <h3>일상의 수준을 높이다</h3>
+            <p>현대인에게 필요한 비타민,철분,
+                <br>
+                아미노산 등의 풍부한 영양소가 함유된
+                <br>
+                프리미엄 무 항생제 계란만 엄격하게
+                <br>
+                사용한 맛있는 스크램블 에그로 건강한
+                <br>
+                한끼를 요리합니다.
+            </p>
+        </div>
+    </section>
+</body>
+</html>

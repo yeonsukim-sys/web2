@@ -10,49 +10,30 @@
             display: flex;
         }
 
-        .ball1 {
+
+        .container > div {
             width: 100px;
             height: 100px;
             border-radius: 50px;
             background-color: gold;
             margin: 16px;
-            animation-name: ballAni;
             animation-duration: 1s;
             animation-timing-function:2;
             animation-direction: normal;
             animation-fill-mode: forwards;
-            animation-iteration-count: infinite;
-            
+            animation-iteration-count: infinite; 
+        }
+        .ball1 {
+            animation-name: ballAni;
         }
 
         .ball2 {
-            width: 100px;
-            height: 100px;
-            border-radius: 50px;
-            background-color: gold;
-            margin: 16px;
-            animation-name: ballani2;
-            animation-duration: 1s;
-            animation-timing-function:2;
-            animation-direction: normal;
-            animation-fill-mode: forwards;
-            animation-iteration-count: infinite;
             
+            animation-name: ballani2;
         }
 
         .ball3 {
-            width: 100px;
-            height: 100px;
-            border-radius: 50px;
-            background-color: gold;
-            margin: 16px;
             animation-name:ballani3;
-            animation-duration: 1s;
-            animation-timing-function:2;
-            animation-direction: normal;
-            animation-fill-mode: forwards;
-            animation-iteration-count: infinite;
-            animation-timing-function: linear;
         }
 
         @keyframes ballAni {
