@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <script src="https://kit.fontawesome.com/161085b17f.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>동아제약 반응형</title>
+    <style>
+        body {
+            background:url(./실습\ 동아제약.jpg);
+            background-size: cover;
+            height: 100vh;
+        }
+        
+        header {
+            padding: 0;
+            margin: 0;
+        }
+
+        .pc_hd_top > ul {
+            display: flex;
+            justify-content: flex-end;
+
+        }
+
+        .pc_hd_top > ul > li {
+            margin: 0 8px;
+            font-size: 14px;
+        }
+
+        .pc_hd_bottom {
+            display: flex;
+            justify-content: space-between;
+            border: 1px solid #000;
+            border-bottom: 2px solid #000;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        .header_right {
+            display: flex;
+            align-items: center;
+        }
+
+        .pc_hd_bottom > nav > ul {
+            display: flex;
+        }
+
+        .pc_hd_bottom > nav > ul > li {
+            margin: 16px;
+            font-size: 20px;
+        }
+
+        .pc_hd_bottom > nav > ul > li > a {
+            color: #000;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .pc_hd_bottom > h1 {
+            background: url(./동아제약헤더로고.svg)no-repeat;
+            width: 300px;
+            height: 50px;
+            background-size: cover;
+            margin-left: 32px;
+        }
+
+        .search_box {
+            border: 1px solid #000;
+            border-radius: 25px;
+            padding: 10px;
+        }
+
+        .search_box > input {
+            border: none;
+        }
+
+        .pc_hd_top > ul:hover {
+            height: 50px;
+            background-color: rgb(31, 61, 230);
+            cursor: pointer;
+        }
+
+        @media (max-width:1296px) {
+            ul {
+                flex-wrap: wrap;
+            }
+        }
+
+        @media (max-width:760px) {
+            .pc_hd_bottom > nav > ul > li {
+                display: none;
+            }
+        }
+
+
+        /* display : flex 와
+        ailgn-items 그리고 justify-content 세트!! */
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="pc_hd_top">
+            <ul>
+                <li>준법경영</li>
+                <li>판매약국찾기</li>
+                <li>감사제보하기</li>
+            </ul>
+        </div>
+        <div class="pc_hd_bottom">
+            <h1></h1>
+            <nav>
+                <ul>
+                    <li><a href="#">
+                        회사소개
+                    </a></li>
+                    <li><a href="#">
+                        브랜드
+                    </a></li>
+                    <li><a href="#">
+                            R&D
+                    </a></li>
+                    <li><a href="#">
+                        정도경영
+                    </a></li>
+                    <li><a href="#">
+                        뉴스룸
+                    </a></li>
+                    <li><a href="#">
+                        인재채용
+                    </a></li>
+                    <li><a href="#">
+                        고객지원
+                    </a></li>
+                </ul>
+            </nav>
+            <div class="header_right">
+                <div class="search_box">
+                    <input type="text"placeholder="검색어입력">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <figure>
+                    <i class="fa-solid fa-globe"></i>
+                </figure>
+                <figure>
+                    <i class="fa-solid fa-bars"></i>
+                </figure>
+            </div>
+        </div>
+    </header>
+</body>
+
+</html>
