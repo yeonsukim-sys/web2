@@ -13,27 +13,27 @@
             font-weight: 400;
             font-style: normal;
         }
-
+        
         .header_top {
             display: flex;
-            /* justify-content: space-between; */
             align-items: center;
-            border-bottom: 1px solid #000;
+            justify-content: space-between;
+            border-bottom: 1px solid #bdbdbd;
+            flex-wrap: wrap;
         }
-
+        
         .header_top > h1 {
             font-family: 'Pretendard-Regular';
             margin: 32px;
         }
-
+        
         .header_top > nav > ul {
             display: flex;
-            
         }
         
         .header_top > nav > ul > li {
             list-style: none;
-            margin: 16px;
+            margin: 30px;
             font-family: 'Pretendard-Regular';
             font-size: 20px;
             font-weight: medium;
@@ -42,6 +42,61 @@
         .header_top > nav > ul > li > a {
             color: #000;
             text-decoration: none;
+        }
+
+        .header_right {
+            display: flex;
+        }
+
+        .header_bottom {
+            padding: 20px;
+            font-size: 18px;
+            font-weight: bold;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #bdbdbd;
+        }
+
+        .guide {
+            display: flex;
+        }
+
+        .guide > div {
+            margin: 16px;
+        }
+
+        
+        .mobile {
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid #bdbdbd;
+            padding: 15px;
+        }
+
+        .mobile_right {
+            display: flex;
+            align-items: center;
+        }
+
+        .mobile_bottom {
+            padding: 30px;
+            display: flex;
+            justify-content: space-between;
+            font-size: 18px;
+            font-weight: bold;
+            border-bottom: 1px solid #bdbdbd;
+        }
+
+
+        @media (max-width: 1024px) {
+            .header_top {
+                display: none;
+            }
+
+            .header_bottom {
+                display: none;
+            }
         }
     </style>
 </head>
@@ -101,12 +156,35 @@
             </div>
         
             <div class="header_bottom">
-                <p> 카카오톡
-                    <span>카톡 안녕가이드</span>
-                    <span>카톡 설명서</span>
-                    <span> 다운로드</span>
-                </p>
+               <div>카카오톡</div>
+                <div class="guide">
+                    <div>카톡 안녕가이드</div>
+                    <div>카톡설명서</div>
+                    <div>다운로드
+                        <i class="fa-solid fa-circle-down"></i>
+                    </div>
+                </div>
             </div>
+        </div>
+
+        <div class="mobile">
+            <h1>kakao</h1>
+            <div class="mobile_right">
+                <figure>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </figure>
+
+                <figure>
+                    <i class="fa-solid fa-burger"></i>
+                </figure>
+            </div>
+
+        </div>
+        <div class="mobile_bottom">
+            <div>카카오톡</div>
+                <div>다운로드
+                    <i class="fa-solid fa-circle-down"></i>
+                </div>
         </div>
     </header>
 </body>
