@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>미디어실습2</title>
+    <style>
+        section {
+            display: flex;
+        }
+        .box {
+            width: 100px;
+            height: 100px;
+            margin: 16px;
+            padding: 15px;
+            background-color: rgb(214, 45, 45);
+            transform: translateX(50%);
+            
+        }
+
+
+        @media (max-width:1280px) {
+            .box:nth-child(7) {
+                align-items: center;
+                justify-content: space-between;
+            }
+        }      
+
+        
+    </style>
+</head>
+<body>
+    <section>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </section>
+</body>
+</html>
