@@ -13,7 +13,8 @@
             font-weight: 400;
             font-style: normal;
         }
-        
+
+        /* 헤더 시작 */
         .header_top {
             display: flex;
             align-items: center;
@@ -21,17 +22,17 @@
             border-bottom: 1px solid #bdbdbd;
             flex-wrap: wrap;
         }
-        
-        .header_top > h1 {
+
+        .header_top>h1 {
             font-family: 'Pretendard-Regular';
             padding: 0 20px;
         }
-        
-        .header_top > nav > ul {
+
+        .header_top>nav>ul {
             display: flex;
         }
-        
-        .header_top > nav > ul > li {
+
+        .header_top>nav>ul>li {
             list-style: none;
             margin: 30px;
             font-family: 'Pretendard-Regular';
@@ -39,7 +40,7 @@
             font-weight: medium;
         }
 
-        .header_top > nav > ul > li > a {
+        .header_top>nav>ul>li>a {
             color: #000;
             text-decoration: none;
         }
@@ -62,24 +63,25 @@
             display: flex;
         }
 
-        .guide > div {
+        .guide>div {
             margin: 16px;
-            
         }
 
-        .guide > div:nth-child(1) {
+        .guide>div:nth-child(1) {
             border-right: 1px solid #000;
             padding: 5px;
-            
+
         }
 
-        .guide > div:nth-child(2){
+        .guide>div:nth-child(2) {
             border-right: 1px solid #000;
             padding: 5px;
         }
+
+
         .mobile {
             font-family: 'Pretendard-Regular';
-            display: flex;
+            display: none;
             justify-content: space-between;
             border-bottom: 1px solid #bdbdbd;
             padding: 15px;
@@ -99,22 +101,17 @@
             border-bottom: 1px solid #bdbdbd;
         }
 
+        /* 헤더 끝 */
 
-        @media (max-width: 1024px) {
-            .header_top {
-                display: none;
-            }
-
-            .header_bottom {
-                display: none;
+        /* @media (max-width: 1024px) {
+            .mobile {
+                
             }
         }
 
         @media (max-width: 760px) {
-            .mobile_bottom > div > i {
-                display: none;
-            }
-        }
+            
+        } */
     </style>
 </head>
 
@@ -161,19 +158,19 @@
                     <figure>
                         <i class="fa-solid fa-magnifying-glass fa-lg"></i>
                     </figure>
-    
+
                     <figure>
                         <i class="fa-solid fa-globe fa-lg"></i>
                     </figure>
-    
+
                     <figure>
                         <i class="fa-regular fa-moon fa-lg"></i>
                     </figure>
                 </div>
             </div>
-        
+
             <div class="header_bottom">
-               <div>카카오톡</div>
+                <div>카카오톡</div>
                 <div class="guide">
                     <div>카톡 안녕가이드</div>
                     <div>카톡설명서</div>
@@ -185,23 +182,25 @@
         </div>
 
         <div class="mobile">
-            <h1>kakao</h1>
-            <div class="mobile_right">
-                <figure>
-                    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
-                </figure>
+            <div>
+                <h1>kakao</h1>
+                <div class="mobile_right">
+                    <figure>
+                        <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+                    </figure>
 
-                <figure>
-                    <i class="fa-solid fa-burger fa-lg"></i>
-                </figure>
+                    <figure>
+                        <i class="fa-solid fa-burger fa-lg"></i>
+                    </figure>
+                </div>
+
             </div>
-
-        </div>
-        <div class="mobile_bottom">
-            <div>카카오톡</div>
+            <div class="mobile_bottom">
+                <div>카카오톡</div>
                 <div>다운로드
                     <i class="fa-solid fa-circle-down"></i>
                 </div>
+            </div>
         </div>
     </header>
 </body>
