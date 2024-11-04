@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자주 사용하는 CSS</title>
+    <style>
+        .style {
+            font-size: 사이즈 px em rem;
+            font-weight: 굵기;
+            color: 컬러;
+            font-family: 폰트;
+            text-decoration: a태그 언더라인 없애기(생성할때도 가능);
+            text-align:center left right 정렬;
+
+            /* display 속성 */
+            display : flex ;
+            justify-content : flex-end, flex-start, center 정렬
+            space- 컨텐츠들의 간격을 부모요소의 width 안에서 나눠먹도록
+            설정하는 기능 ; 
+            align-items: 새로축을 기준으로 정렬;
+            flex-wrap: wrap;
+            flex-direction: 중심축을 column으로 변경하는 속성;
+
+            /* background 속성 */
+            background-color: 컬러값 지정;
+            background:컬러값을 지정해도 괜찮고, url()로 이미지를 저장가능;
+            background-size: 이미지 사이즈 조절 px , 퍼센트 cover contain;
+            background-repeat: no-repeat ;
+            background-position: 60% 이미지의 위치를 결정 px로도 가능;
+            
+            /* 영역속성 */
+            width: 가로 영역 지정;
+            height: 세로 영역 지정;
+            padding:16px 32px 24px 등등 디폴트값 콘텐츠와 보더 사이에 간격을 지정;
+            border: 컨텐츠의 경계선 (콘텐츠 구성 요소);
+            margin: 콘텐츠 외의 여백 요소들끼리 간격을 띄울때 사용한다 (영역 밖의 요소);
+            border-radius: 보더를 둥글게;
+            max-width: 요소가 가질수 있는 최대 크기 width 값을 설정한  지정하는 것
+            width값 보다 늘어날수 없다;
+            min-width: 요소가 가지는 최소값 설정한 width값 보다 줄어들수 없다;
+            width: 100vw 모든 화면에서 100%로 지정하고 싶을때 사용 (모든 크기의 화면);
+            width: 100vh 브라우저를 기준으로 100%의 height 를 가지는 것;
+
+            /* 위치속성 */
+            position: relative 기준이 되는 요소의 부여;
+            position: absolute 그 기준을 따라가는 움직일 요소에 부여;
+            position: sticky 화면에 딱 고정 fixed 값과 비슷;
+            top: 0;
+            left: 0;
+            /* 움직일 요소에 같이 작성 / 기준으로부터 얼마나 떨어질건지를 지정 */
+            z-index: 2 요소들의 순서를 변경 우선순위 (종이 스케치북 넘기는거 생각해보기);
+
+            /* display */
+            display: block;
+            display: flex;
+            display: inline-block;
+            display: inline;
+            display: none;
+
+            /* 잡다한거 */
+            overflow: hidden 영역을 자식요소가 넘어가면 아예 안 보이게 설정 
+            scroll 지정한 영역을 넘어가면 스크롤바가 생겨서 안보이지만 스크롤이 가능하도록 설정 가능;
+            transform: translateX(),translateY(),scale() X값과 Y값이 같이 사용되는 것;
+
+
+            /* 애니메이션 속성 */
+            animation-name: 이름;
+            animation-duration: 지속시간;
+            animation-fill-mode: forwards 끝난 상태 유지하기;
+        }
+    </style>
+</head>
+<body>
+    <div class="style"></div>
+</body>
+</html>
