@@ -1,17 +1,88 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>현대 자동차</title>
+    <script src="https://kit.fontawesome.com/161085b17f.js" crossorigin="anonymous"></script>
+    <style>
+        /* 헤더 시작 */
+        @font-face {
+            font-family: 'Pretendard-Regular';
+            src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .header_wrap {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        .logo_area>h1 {
+            background: url(./스크린샷\ 2024-11-08\ 205913.png);
+            background-size: cover;
+            width: 130px;
+            height: 70px;
+        }
+
+        .menu_list {
+            display: flex;
+            padding: 15px;
+        }
+
+        .menu_list > li {
+            margin: 30px;
+        }
+
+        .menu_list> li > a {
+            text-decoration: none;
+            color: #000;
+            font-weight: 600;
+            font-size: 16px;
+            font-family: 'Pretendard-Regular';
+        }
+
+        .service_icon {
+            display: flex;
+            align-items: center;
+        }
+
+        .item_area > a {
+            text-decoration: none;
+            font-size: 15px;
+            color: #000;
+            font-family: 'Pretendard-Regular';
+        }
+
+        .language > ul > select {
+            border: none;
+            font-size: 17px;
+            font-family: 'Pretendard-Regular';
+            text-align: center;
+        }
+
+        .only_icon {
+            display: flex;
+        }
+
+        /*  */
+    </style>
 </head>
+
 <body>
     <header>
         <div class="header_wrap">
             <div class="logo_area">
-                <div class="logo">
-                    <h1>hyundai</h1>
-                </div>
+                <h1></h1>
+                <!-- 이미지 들어감
+                     백그라운드  -->
             </div>
 
             <div>
@@ -57,12 +128,59 @@
                     </a>
                 </div>
                 <div class="language">
-                    <Select>
-                        
-                    </Select>
+                    <ul>
+                        <select name="언어" id="lang">
+                            <option value="KR">KR</option>
+                            <option value="EN">EN</option>
+                            <option value="CN">CN</option>
+                            <option value="WR">월드와이드</option>
+                        </select>
+                    </ul>
+                </div>
+
+                <div class="only_icon">
+                    <figure>
+                        <a href="https://prd.kr-ccapi.hyundai.com/web/v1/user/signin">
+                            <i class="fa-regular fa-user fa-2x"></i>
+                        </a>
+                    </figure>
+
+                    <figure>
+                        <a href="">
+                            <i class="fa-solid fa-magnifying-glass fa-2x"></i>
+                        </a>
+                    </figure>
+
+                    <figure>
+                        <a href="">
+                            <i class="fa-solid fa-bars fa-2x"></i>
+                        </a>
+                    </figure>
                 </div>
             </div>
         </div>
     </header>
+
+    <section class="main_content">
+        <div class="text_wrap">
+            <a href="https://www.hyundai.com/kr/ko/e/vehicles/grandeur/intro">
+
+                <div class="text_area">
+                    <p class="car_name">
+                        GRANDEUR
+                    </p>
+
+                    <p class="car_name_02">
+                        outclass,GRANDEUR
+                    </p>
+                </div>
+            </a>
+        </div>
+
+        <span class="car_img">
+            <img src="./그랜져.png" alt="GRD">
+        </span>
+    </section>
 </body>
+
 </html>
