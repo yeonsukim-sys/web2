@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 
 <head>
     <meta charset="UTF-8">
@@ -7,167 +7,410 @@
     <title>네이버 밴드 클론</title>
     <style>
         body {
-            width: 100vh;
-            background-color: #fafafaad;
+            /* width: 100vh; */
+            padding: 0;
+            margin: 0;
         }
 
         li {
             list-style: none;
+        }
+
+        .header_top {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin: 16px;
+        }
+
+        .header_top>h1 {
+            background: url(./spr_intro.png);
+            width: 78px;
+            height: 29px;
+            background-position: 0 -98px;
+        }
+
+        .header_top>ul {
+            display: flex;
+            align-items: center;
+        }
+
+        .header_top>ul>li {
+            margin:0 16px;
+        }
+
+        .header_top>ul>li>a {
+            text-decoration: none;
+        }
+
+        .header_top>ul>li:nth-child(1)>select {
+            border: none;
+            color: gray;
+            font-size: 16px;
+            outline: none;
+        }
+
+
+        .header_top>ul>li:nth-child(1)>select:hover {
+            text-decoration: underline;
+        }
+
+        .header_top>ul>li:nth-child(2)>a {
+            color: #000
+        }
+
+        .header_top>ul>li:nth-child(3) {
+            width: 100px;
+            height: 35px;
+            background-color: rgb(35, 224, 10);
+            border-radius: 4px;
+            text-align: center;
+        }
+
+        .header_top>ul>li:nth-child(3)>a {
+
+            font-size: 16px;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        /* 여기까지가 헤더 끝*/
+
+        /* 여기서부터 1번섹션 */
+
+        figure {
+            background: url(./네이버밴드\ 메인.jpg);
+            width: 540px;
+            height: 695px;
+            background-size: cover;
+        }
+
+        .main {
+            display: flex;
+            align-items: center;
+            background-color: #f6f8fa;
+        }
+
+
+        .sign_in>h2 {
+            font-size: 50px;
+            font-weight: 500;
+        }
+
+        .form_button {
+            display: flex;
+            flex-direction: column;
+        }
+
+        
+
+        .form_button button:nth-child(1) {
+            width: 350px;
+            height: 50px;
+            background-color: rgb(18, 211, 18);
+            border: none;
+        }
+
+        .form_button button:nth-child(1)>a {
+            font-size: 16px;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .form_button button:nth-child(2) {
+            width: 350px;
+            height: 50px;
+            background-color: #fff;
+            border: 1px solid #e6e6e6;
+        }
+
+        .form_button button:nth-child(2)>a {
+            font-size: 16px;
+            color: #000000;
+            text-decoration: none;
         }
     </style>
 </head>
 
 <body>
     <header>
-        <div>
-            <h1>BAND</h1>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#">한국어</a>
-                    </li>
-                    <li>
-                        <a href="#">회원가입</a>
-                    </li>
-                    <li>
-                        <a href="#">로그인</a>
-                    </li>
-                </ul>
-            </nav>
+        <div class="header_top">
+            <h1></h1>
+
+            <ul>
+                <li>
+                    <select name="Languge" id="">
+                        <option value="KR">한국어</option>
+                        <option value="EN">English</option>
+                        <option value="JP">Japenese</option>
+                    </select>
+                </li>
+
+                <li>
+                    <a href="#">
+                        회원가입
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        로그인
+                    </a>
+                </li>
+            </ul>
         </div>
     </header>
 
-    <section>
+    <section class="main">
         <figure>
-            <img src="./네이버밴드 메인.jpg" alt="phone_UI">
-            <h1>모임이 쉬워진다!
+            <!-- <img src="./네이버밴드 메인.jpg" alt="phone_UI"> -->
+        </figure>
+
+        <div class="sign_in">
+            <h2>모임이 쉬워진다!
                 <br>
                 우리끼리 밴드
-            </h1>
+            </h2>
             <p>당신의 모임도 BAND로 시작하세요</p>
 
             <div class="form_button">
-                <button>로그인</button>
-                <button>회원가입</button>
+                <button>
+                    <a href="#">
+                        로그인
+                    </a>
+                </button>
+
+                <button>
+                    <a href="#">
+                        회원가입
+                    </a>
+                </button>
             </div>
 
             <ul>
                 <li>
-                    내게 맞는 밴드를 만나려면 <a href="#">밴드 찾기</a>
+                    내게 맞는 밴드를 만나려면
+                    <a href="#">
+                        밴드 찾기
+                    </a>
                 </li>
                 <li>
-                    요일별 밴드 활용법 <a href="#">밴드 가이드 보기</a>
+                    요일별 밴드 활용법
+                    <a href="#">
+                        밴드 가이드 보기
+                    </a>
                 </li>
                 <li>
-                    만 13세 미만이라면? <a href="#">'밴드 키즈'알아보기</a>
+                    만 13세 미만이라면?
+                    <a href="#">
+                        '밴드 키즈'알아보기
+                    </a>
                 </li>
             </ul>
-        </figure>
-
-            <figure>
-                <img src="./네이버밴드 섹션.jpg" alt="meeting">
-                <div>
-                    <h2>모임을 위한 공간, 밴드</h2>
-                    <p>밴드는 그룹멤버와 함께하는 공간입니다.
-                        <br>
-                        동호회, 스터디 , 주제별 모임을 밴드로 시작하세요.
-                    </p>
-                </div>
-            </figure>
+        </div>
     </section>
 
-    <ul class="intro_area">
-        <li>
-            <div>
-                <img src="" alt="">
-            </div>
-            <div>
-                <h3>어떤 모임이라도!</h3>
-                <p>친구, 가족, 동료 등 함께 하고 싶은 사람과
-                    <br>
-                    우리만의 공간을 만들어보세요.
-                </p>
-            </div>
-        </li>
-        <li>
-            <div>
-                <img src="" alt="">
-            </div>
-            <div>
-                <h3>모임에 딱 맞는 기능들</h3>
-                <p>투표로 의견을 모으고, 함께 일정을 공유하며
-                    <br>
-                    게시판과 앨범에는 추억을 쌓아보세요.
-                </p>
-            </div>
-        </li>
-        <li>
-            <div>
-                <img src="" alt="">
-            </div>
-            <div>
-                <h3>내가 원하는 모임 찾기</h3>
-                <p>취미,스포츠,또래 모임 등
-                    <br>
-                    나와 같은 관심사 밴드를 찾을수 있어요
-                </p>
-            </div>
-        </li>
-    </ul>
+    <!-- <img src="./네이버밴드 섹션.jpg" alt="meeting"> -->
+    <!-- 백그라운드로 설정 지향 -->
+    <section class="backgroun_img">
 
-    <div class="about_band">
-        <h2>이런 밴드는 어때요</h2>
-        <div class="bands">
-            <nav>
-                <ul>
-                    <li>
-                        <p> 매일 크로키하기
-                            <span>
-                                매일 크로키
-                            </span>
-                        </p>
-                    </li>
-                    <li>
-                        <p> 영어필사
-                            <span></span>
-                        </p>
-                    </li>
-                    <li>
-                        <p> 가수 영탁 팬밴드
-                            <span></span>
-                        </p>
-                    </li>
-                    <li>
-                        <p> 한국도로공사여자배구단
-                            <span></span>
-                        </p>
-                    </li>
-                    <li>
-                        <p> 대한축구협회팬밴드
-                            <span></span>
-                        </p>
-                    </li>
-                    <li>
-                        <p> 지속가능한 고독의 기술 :The Art of Self-Recharging Pow
-                            <span></span>
-                        </p>
-                    </li>
-                    <li>
-                        <p> 매일 5천보 걷기
-                            <span></span>
-                        </p>
-                    </li>
-                    <li>
-                        <p>애플 사용자들의 모임
-                            <span></span>
-                        </p>
-                    </li>
-                </ul>
-            </nav>
+        <h2>모임을 위한 공간, 밴드</h2>
+        <p>밴드는 그룹멤버와 함께하는 공간입니다.
+            <br>
+            동호회, 스터디 , 주제별 모임을 밴드로 시작하세요.
+        </p>
+    </section>
+
+
+    <section class="band_function">
+        <ul class="intro_area">
+            <li>
+                <div>
+                    <img src="" alt="">
+                </div>
+                <div>
+                    <h3>어떤 모임이라도!</h3>
+                    <p>친구, 가족, 동료 등 함께 하고 싶은 사람과
+                        <br>
+                        우리만의 공간을 만들어보세요.
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="" alt="">
+                </div>
+                <div>
+                    <h3>모임에 딱 맞는 기능들</h3>
+                    <p>투표로 의견을 모으고, 함께 일정을 공유하며
+                        <br>
+                        게시판과 앨범에는 추억을 쌓아보세요.
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="" alt="">
+                </div>
+                <div>
+                    <h3>내가 원하는 모임 찾기</h3>
+                    <p>취미,스포츠,또래 모임 등
+                        <br>
+                        나와 같은 관심사 밴드를 찾을수 있어요
+                    </p>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+
+    <section class="about_band">
+        <div class="band_gray">
+            <h2>이런 밴드는 어때요</h2>
+            <ul>
+                <li>
+                    <img src="" alt="">
+                    <div>
+                        <h3>매일 크로키하기</h3>
+                        <p>매일 크로키</p>
+                        <div>
+                            <span>멤버</span>
+                            <span>리더</span>
+
+                            <button>
+                                밴드 더보기
+                            </button>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <img src="" alt="">
+                    <div>
+                        <h3>등산코스이야기</h3>
+                        <p>등산을 사랑하는 이들 모임</p>
+                        <div>
+                            <span>멤버</span>
+                            <span>리더</span>
+
+                            <button>
+                                밴드 더보기
+                            </button>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <img src="" alt="">
+                    <div>
+                        <h3>한국도로공사여자배구단</h3>
+                        <p>도로공사 배구단 응원합니다</p>
+                        <div>
+                            <span>멤버</span>
+                            <span>리더</span>
+
+                            <button>
+                                밴드 더보기
+                            </button>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <img src="" alt="">
+                    <div>
+                        <h3>국립공원 국민모니터링</h3>
+                        <p>국립공원 생물계절 모니터링을 위한 밴드입니다</p>
+                        <div>
+                            <span>멤버</span>
+                            <span>리더</span>
+
+                            <button>
+                                밴드 더보기
+                            </button>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <img src="" alt="">
+                    <div>
+                        <h3>키움 히어로즈 팬밴드</h3>
+                        <p>여기는 히어로즈 야구팀 대표 키움 히어로즈입니다</p>
+                        <div>
+                            <span>멤버</span>
+                            <span>리더</span>
+
+                            <button>
+                                밴드 더보기
+                            </button>
+                        </div>
+                    </div>
+                </li>
+            </ul>
         </div>
-    </div>
+    </section>
 
-    <footer></footer>
+    <section class="Download_container">
+        <div class="Download_left">
+            <figure></figure>
+            <div>
+                <h2></h2>
+                <p></p>
+            </div>
+        </div>
+
+        <div class="Download_store">
+            <a href=""></a>
+            <a href=""></a>
+        </div>
+    </section>
+
+    <footer>
+        <ul>
+            <li>
+
+            </li>
+            <li>
+
+            </li>
+            <li>
+
+            </li>
+            <li>
+
+            </li>
+            <li>
+
+            </li>
+            <li>
+
+            </li>
+            <li>
+
+            </li>
+            <li>
+
+            </li>
+            <li>
+
+            </li>
+            <li>
+
+            </li>
+            <li>
+
+            </li>
+            <li>
+
+            </li>
+
+            <p>
+                BAND 2024
+            </p>
+        </ul>
+    </footer>
 </body>
 
 </html>
