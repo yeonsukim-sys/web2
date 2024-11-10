@@ -73,6 +73,51 @@
         }
 
         /* 헤더 끝 */
+
+        /* 메인 시작 */
+        input {
+            display: none;
+        }
+
+        .slide_car {
+            max-width: 1000px;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .slide_car > img {
+            max-width: 100%;
+        }
+
+        /* .slide_car .slidelist {
+            white-space: nowrap;
+            /* 자식요소 줄바꿈 없애기 */
+            font-size: 0;
+            /* 빈 공간 생성을 위함 */
+            overflow: hidden;
+            /* 넘어가는 부분 숨기기 */
+        } */
+
+        .slide_car .sldieitem {
+            position: relative;
+            display: inline-block;
+            vertical-align: middle;
+            /* 세로정렬 가운데로 맞춤 */
+            width: 100%;
+            transition: all .35s;
+        }
+
+        .slide_car .sldieitem label {
+            position: absolute;
+            z-index: 1;
+            top: 50%;
+            transform: translateY(-50%);
+            padding: 20px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        
     </style>
 </head>
 
@@ -162,24 +207,95 @@
     </header>
 
     <section class="main_content">
-        <div class="text_wrap">
-            <a href="https://www.hyundai.com/kr/ko/e/vehicles/grandeur/intro">
 
-                <div class="text_area">
-                    <p class="car_name">
-                        GRANDEUR
-                    </p>
+        <div class="slide_car">
+            <input type="radio" name="slide" id="slide_01">
+            <input type="radio" name="slide" id="slide_02">
+            <input type="radio" name="slide" id="slide_03">
+            <input type="radio" name="slide" id="slide_04">
 
-                    <p class="car_name_02">
-                        outclass,GRANDEUR
-                    </p>
-                </div>
-            </a>
+            <ul class="slidelist">
+                <li class="slideitem">
+
+                    <a href="https://www.hyundai.com/kr/ko/e/vehicles/grandeur/intro">
+                        <p class="Car_name">
+                            GRANDEUR  
+                        </p>
+                        <p class="introduce">
+                            outclass,GRANDEUR  
+                        </p>
+                    </a>
+
+                    <div>
+                        <label for="slide_04" class="left"></label>
+                        <label for="slide_04" class="right"></label>
+                        <a>
+                            <img src="./그랜져.png" alt="grandeur">
+                        </a>
+                    </div>
+                </li>
+
+                <li class="slideitem">
+
+                    <a href="https://www.hyundai.com/kr/ko/e/vehicles/sonata-the-edge/intro">
+                        <p class="Car_name">
+                            SONATA The Edge
+                        </p>
+                        <p class="introduce">
+                           익숙함도 완전히 새롭게 
+                        </p>
+                    </a>
+                    
+                    <div>
+                        <label for="slide_04" class="left"></label>
+                        <label for="slide_04" class="right"></label>
+                        <a>
+                            <img src="./소나타.png" alt="">
+                        </a>
+                    </div>
+                </li>
+
+                <li class="slideitem">
+
+                    <a href="https://www.hyundai.com/kr/ko/e/vehicles/avante/intro">
+                        <p class="Car_name">
+                           AVANTE
+                        </p>
+                        <p class="introduce">
+                           지금, 더 매력적인 
+                        </p>
+                    </a>
+
+                    <div>
+                        <label for="slide_04" class="left"></label>
+                        <label for="slide_04" class="right"></label>
+                        <a>
+                            <img src="./아반뗴.png" alt="">
+                        </a>
+                    </div>
+                </li>
+
+                <li class="slideitem">
+
+                    <a href="https://www.hyundai.com/kr/ko/e/vehicles/ioniq5-n/intro">
+                        <p class="Car_name">
+                          IONIQ 5 N
+                        </p>
+                        <p class="introduce">
+                           Everyday N Life 
+                        </p>
+                    </a>
+                    
+                    <div>
+                        <label for="slide_04" class="left"></label>
+                        <label for="slide_04" class="right"></label>
+                        <a>
+                            <img src="./아이오닉.png" alt="">
+                        </a>
+                    </div>
+                </li>
+            </ul>
         </div>
-
-        <span class="car_img">
-            <img src="./그랜져.png" alt="GRD">
-        </span>
     </section>
 </body>
 
