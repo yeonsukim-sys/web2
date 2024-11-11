@@ -130,6 +130,190 @@
             color: #000000;
             text-decoration: none;
         }
+
+        .form_button > button:last-child {
+            margin-top: 8px;
+        }
+
+        .main {
+            background: #f6f8fa;
+            justify-content: center;
+            padding-top: 100px;
+        }
+
+        /* 메인 섹션 끝 */
+
+        /* 백그라운드 시작 */
+        .backgroun_img {
+            background: url(./네이버밴드\ 섹션.jpg);
+            height: 540px;
+            color: #fff;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .backgroun_img > h2 {
+            font-size: 42px;
+            font-weight: 500;
+            margin-bottom: 32px;
+        }
+
+        .backgroun_img > p {
+            line-height: 24px;
+        }
+
+        /* 백그라운드 끝 */
+
+        /* 밴드 펑션 시작 */
+
+        .band_function > ul {
+            width: 1000px;
+            margin: 50px auto;
+            display: flex;
+            
+        }
+
+        .funcion_list > figure {
+            width: 300px;
+            height: 150px;
+            background-size: 300px 150px;
+        }
+
+        .function_img1 {
+            background: url(./img_01.jpg);
+        }
+
+        .function_img2 {
+            background: url(./img_01.jpg);
+        }
+
+        .function_img3 {
+            background: url(./img_01.jpg);
+        }
+
+        .funcion_list > h2 {
+            font-size: 24px;
+            margin: 16px 0;
+        }
+
+        .funcion_list > p {
+            font-size: 14px;
+            line-height: 20px;
+            color: #444;
+        }
+
+        /* 밴드 추천 시작 */
+        .about_band {
+            padding: 50px 0;
+            background-color: #f6f8fa;
+        }
+
+        .band_gray {
+            width: 1000px;
+            margin: 0 auto;
+        }
+        .band_gray > h2 {
+            font-size: 24px;
+        }
+
+        .band_gray > ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .recommand_list  > img {
+            width: 93px;
+            height: 93px;
+            background-size: 93px 93px;
+            border-radius: 18px;
+        }
+
+        .recommand_list {
+            display: flex;
+        }
+
+        .recommand_list > h2 {
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .recommand_list_text > .more {
+            padding: 4px 8px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 25px;
+        }
+
+        .recommand_list_text > div > span {
+            color: #000;
+        }
+
+        /* 밴드 끝 */
+
+        /* 다운로드 시작 */
+        .Download_container {
+            width: 1000px;
+            margin: 0 auto;
+            padding: 24px 0;
+        }
+
+        .Download_left > figure {
+            background: url(./spr_intro.png);
+            width: 70px;
+            height: 70px;
+            background-position: -162px 0;
+            margin-right: 16px;
+        }
+
+        .Download_left {
+            display: flex;
+            align-items: center;
+        }
+
+        .Download_store > a:first-child {
+            background: url(./spr_intro.png);
+            width: 160px;
+            height: 47px;
+            background-position: 0 0;
+            display: inline-block;
+        }
+        .Download_store > a:last-child {
+            background: url(./spr_intro.png);
+            width: 160px;
+            height: 47px;
+            background-position: 0 -49px;
+            display: inline-block;
+        }
+        /* 다운로드 끝 */
+
+        /* 푸터 시작 */
+
+        footer {
+            background-color: #2a3038;
+            color: #999;
+            padding: 32px;
+        }
+
+        footer > ul {
+            display: flex;
+            flex-wrap: wrap;
+            font-size: 14px;
+            width: 1000px;
+            margin: 0 auto;
+        }
+
+        footer > ul > li {
+            margin: 8px 4px;
+        }
+
+        footer > p {
+            color: #ddd;
+            margin: 16px auto 0 auto;
+            width: 1000px;
+        }
     </style>
 </head>
 
@@ -164,7 +348,6 @@
 
     <section class="main">
         <figure>
-            <!-- <img src="./네이버밴드 메인.jpg" alt="phone_UI"> -->
         </figure>
 
         <div class="sign_in">
@@ -224,11 +407,9 @@
 
 
     <section class="band_function">
-        <ul class="intro_area">
-            <li>
-                <div>
-                    <img src="" alt="">
-                </div>
+        <ul>
+            <li class="funcion_list">
+                <figure class="function_img1"></figure>
                 <div>
                     <h3>어떤 모임이라도!</h3>
                     <p>친구, 가족, 동료 등 함께 하고 싶은 사람과
@@ -237,10 +418,9 @@
                     </p>
                 </div>
             </li>
-            <li>
-                <div>
-                    <img src="" alt="">
-                </div>
+
+            <li class="funcion_list">
+                <figure class="function_img2"></figure>
                 <div>
                     <h3>모임에 딱 맞는 기능들</h3>
                     <p>투표로 의견을 모으고, 함께 일정을 공유하며
@@ -249,10 +429,9 @@
                     </p>
                 </div>
             </li>
-            <li>
-                <div>
-                    <img src="" alt="">
-                </div>
+            
+            <li class="funcion_list">
+                <figure class="function_img3"></figure>
                 <div>
                     <h3>내가 원하는 모임 찾기</h3>
                     <p>취미,스포츠,또래 모임 등
@@ -269,80 +448,80 @@
         <div class="band_gray">
             <h2>이런 밴드는 어때요</h2>
             <ul>
-                <li>
-                    <img src="" alt="">
-                    <div>
+                <li class="recommand_list">
+                    <img src="./img_band.jpg" alt="">
+                    <div class="recommand_list_text">
                         <h3>매일 크로키하기</h3>
                         <p>매일 크로키</p>
                         <div>
                             <span>멤버</span>
                             <span>리더</span>
 
-                            <button>
+                            <button class="more">
                                 밴드 더보기
                             </button>
                         </div>
                     </div>
                 </li>
 
-                <li>
-                    <img src="" alt="">
-                    <div>
+                <li class="recommand_list">
+                    <img src="./img_band.jpg" alt="">
+                    <div class="recommand_list_text">
                         <h3>등산코스이야기</h3>
                         <p>등산을 사랑하는 이들 모임</p>
                         <div>
                             <span>멤버</span>
                             <span>리더</span>
 
-                            <button>
+                            <button class="more">
                                 밴드 더보기
                             </button>
                         </div>
                     </div>
                 </li>
 
-                <li>
-                    <img src="" alt="">
-                    <div>
+                <li  class="recommand_list">
+                    <img src="./img_band.jpg" alt="">
+                    <div class="recommand_list_text">
                         <h3>한국도로공사여자배구단</h3>
                         <p>도로공사 배구단 응원합니다</p>
                         <div>
                             <span>멤버</span>
                             <span>리더</span>
 
-                            <button>
+                            <button class="more">
                                 밴드 더보기
                             </button>
                         </div>
                     </div>
                 </li>
 
-                <li>
-                    <img src="" alt="">
-                    <div>
+                <li  class="recommand_list">
+                    <img src="./img_band.jpg" alt="">
+                    <div class="recommand_list_text"> 
                         <h3>국립공원 국민모니터링</h3>
                         <p>국립공원 생물계절 모니터링을 위한 밴드입니다</p>
                         <div>
                             <span>멤버</span>
                             <span>리더</span>
 
-                            <button>
+                            <button class="more">
                                 밴드 더보기
                             </button>
                         </div>
                     </div>
                 </li>
 
-                <li>
-                    <img src="" alt="">
-                    <div>
+                <li  class="recommand_list">
+                    <img src="./img_band.jpg" alt="">
+                    <div class="recommand_list_text">
                         <h3>키움 히어로즈 팬밴드</h3>
                         <p>여기는 히어로즈 야구팀 대표 키움 히어로즈입니다</p>
                         <div>
                             <span>멤버</span>
                             <span>리더</span>
 
-                            <button>
+                            <button class="more">
                                 밴드 더보기
                             </button>
                         </div>
@@ -356,8 +535,12 @@
         <div class="Download_left">
             <figure></figure>
             <div>
-                <h2></h2>
-                <p></p>
+                <h2>
+                    밴드앱을 다운로드 하세요
+                </h2>
+                <p>
+                    당신의 모임도 band 하세요
+                </p>
             </div>
         </div>
 
@@ -370,7 +553,34 @@
     <footer>
         <ul>
             <li>
-
+                블로그
+            </li>
+            <li>
+                공지사항
+            </li>
+            <li>
+                스티커제안
+            </li>
+            <li>
+                광고
+            </li>
+            <li>
+                이용약관
+            </li>
+            <li>
+                개인정보처리방침
+            </li>
+            <li>
+                쿠키 설정
+            </li>
+            <li>
+                CCPA 개인정보관리
+            </li>
+            <li>
+                청소년 보호를 위한 노력
+            </li>
+            <li>
+                활동정책
             </li>
             <li>
 
@@ -378,38 +588,11 @@
             <li>
 
             </li>
-            <li>
 
-            </li>
-            <li>
-
-            </li>
-            <li>
-
-            </li>
-            <li>
-
-            </li>
-            <li>
-
-            </li>
-            <li>
-
-            </li>
-            <li>
-
-            </li>
-            <li>
-
-            </li>
-            <li>
-
-            </li>
-
-            <p>
-                BAND 2024
-            </p>
         </ul>
+        <p>
+            BAND 2024
+        </p>
     </footer>
 </body>
 
